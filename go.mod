@@ -1,4 +1,4 @@
-module github.com/thcyron/skop/v2
+module github.com/joshi425/skop/v2
 
 go 1.15
 
