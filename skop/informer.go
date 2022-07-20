@@ -34,7 +34,7 @@ func newK8sInformer(
 		return nil, err
 	}
 
-	factory := dynamicinformer.NewFilteredDynamicSharedInformerFactory(client, 5 * time.Minute, namespace, nil)
+	factory := dynamicinformer.NewFilteredDynamicSharedInformerFactory(client, 30 * time.Minute, namespace, nil)
 	informer := factory.ForResource(gvr).Informer()
 
 	return &k8sInformer{
